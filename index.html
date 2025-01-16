@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Spots To Eat</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fdf5e6;
+        }
+        header {
+            background-color: #ff6347;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        .container {
+            margin: 2rem auto;
+            max-width: 1200px;
+            padding: 1rem;
+        }
+        .truck-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 1rem;
+        }
+        .truck-card {
+            flex: 1 1 calc(25% - 1rem);
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .truck-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        .truck-card img {
+            width: 100%;
+            display: block;
+            border-bottom: 1px solid #ddd;
+        }
+        .truck-card-content {
+            padding: 1rem;
+        }
+        .truck-title {
+            font-size: 1.5rem;
+            margin: 0.5rem 0;
+            color: #ff6347;
+        }
+        .menu {
+            margin: 1rem 0;
+            padding: 0.5rem;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .menu h3 {
+            margin: 0.5rem 0;
+            color: #ff6347;
+        }
+        .menu img {
+            width: 100%;
+            margin-top: 10px;
+            border-radius: 8px;
+        }
+        .map {
+            margin: 2rem 0;
+            text-align: center;
+        }
+        footer {
+            background-color: #ff6347;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        a {
+            color: #ff6347;
+            text-decoration: none;
+        }
+        .truck-card img.small-logo {
+            width: 100px;
+            height: auto;
+            margin: 0 auto;
+            display: block;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Best Spots To Eat</h1>
+        <p> Arlene’s recommendation: While taste is subjective, I personally recommend the following taco meats: Asada, Chorizo, and Carnitas. These are my go-to choices. </p>
+    </header>
+
+    <div class="container">
+        <div class="truck-grid">
+            <!-- Truck 1 -->
+            <div class="truck-card">
+                <img src="Photos/senortacoslogo.png" alt="Senor Tacos" class="small-logo">
+                <div class="truck-card-content">
+                    <h2 class="truck-title">Senor Tacos</h2>
+                    <p><strong>Specialties:</strong> Tacos de Asada</p>
+                    <p><strong>Location:</strong> 1249 Baldwin Ave Pontiac, MI 48342.</p>
+                    <p><strong>Hours:</strong> 11 AM - 11 PM (Mon-Sun)</p>
+                    <p><a href="https://www.senortacosfoodtruckmi.com/senor-tacos-foodtruck/menu/1249-Baldwin-Ave/" target="_blank">Order Online</a></p>
+
+                    <div class="menu">
+                        <h3>Menu Highlights:</h3>
+                        <ul>
+                            <li>Traditional Mexican Taco - $3.25</li>
+                            <li>Quesadillas - $4.00</li>
+                        </ul>
+                        <img src="Photos/senortacos.png" alt="Traditional Mexican Taco">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Truck 2 -->
+            <div class="truck-card">
+                <img src="Photos/elfogon.png" alt="El Fogon" class="small-logo">
+                <div class="truck-card-content">
+                    <h2 class="truck-title">El Fogon</h2>
+                    <p><strong>Specialties:</strong> Carnitas, Burritos, Nachos, Tortas, Tacos, Churros, Enchiladas, Taco, Pollo Asado, Fish Tacos, Quesadilla, Tres Leches Cake</p>
+                    <p><strong>Location:</strong> 3047 Walton Blvd. Auburn Hills, MI 48326</p>
+                    <p><strong>Hours:</strong> 10 AM - 9 PM (Mon-Sun)</p>
+                    <p><a href="https://elfogondetroit.com/" target="_blank">Visit Website</a></p>
+
+                    <div class="menu">
+                        <h3>Menu Highlights:</h3>
+                        <ul>
+                            <li>Queso Birria - $16.50</li>
+                            <li>Carnitas Dinner - $8.00</li>
+                            <li>Tacos Al Pastor - $3.50</li>
+                            <li>Horchata - $3.50 small</li>
+                        </ul>
+                            <img src="Photos/alpastor.jpeg" alt="Menu for El Fogon">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Truck 3 -->
+            <div class="truck-card">
+                <img src="Photos/LupitasKitchenLogo.jpg" alt="Lupitas Kitchen" class="small-logo">
+                <div class="truck-card-content">
+                    <h2 class="truck-title">Lupitas Kitchen</h2>
+                    <p><strong>Specialties:</strong>Queso birria, tacos</p>
+                    <p><strong>Location:</strong> 952 Joslyn Ave, Pontiac, MI 48340</p>
+                    <p><strong>Hours:</strong> 10:30 AM - 8 PM (Daily)</p>
+                    <div class="menu">
+                        <h3>Menu Highlights:</h3>
+                        <ul>
+                            <li>Street Tacos - $3.00</li>
+                            <li>Birria Tacos - $4.00</li>
+                            <li>Burrito - $12.00</li>
+                        </ul>
+                        <img src="Photos/LupitasTacos.png" alt="Menu for Lupitas Kitchen">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Truck 4 -->
+            <div class="truck-card">
+            <img src="Photos/LaFeriaTacos.jpg" alt="La Feria Tacos" class="small-logo">
+                <div class="truck-card-content">
+                    <h2 class="truck-title">La Feria Taco Truck</h2>
+                    <p><strong>Specialties:</strong> Authentic Street Tacos</p>
+                    <p><strong>Location:</strong> 805 Baldwin Ave, Pontiac, MI 48340</p>
+                    <p><strong>Hours:</strong> 11 AM - 11 PM (Mon-Sat)</p>
+                    <p><a href="https://laferiatacotruck.com/" target="_blank">Visit Website</a></p>
+                    <div class="menu">
+                        <h3>Menu Highlights:</h3>
+                         <ul>
+                            <li>Street Tacos(Asada & Chorizo) - $2.75</li>
+                        </ul>
+                        <img src="Photos/LaFeriaTacos.jpg" alt="Menu for La Feria Taco Truck">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Best Spots</p>
+    </footer>
+</body>
+</html>
